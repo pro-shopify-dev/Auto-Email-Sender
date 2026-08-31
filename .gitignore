@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+build/
+.env
+.env.local
+.env*.local
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
+.vercel
+next-env.d.ts
+*.tsbuildinfo
+# Ignore nested repos and backups created during initialization
+Auto Email Sneder/
+y/
+.git.broken/
+
