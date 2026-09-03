@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^Set-Location 'E:\\\\Burlk Email Sender From Personal Gmails\\\\tools\\\\synth-run-20260831165336'; pwsh -NoProfile -NoLogo -Command \"& '\\./tools/synthesize-2023-history\\.ps1' -Commits 20 -AuthorName 'pro-shopify-dev' -AuthorEmail 'admin@codvoro\\.com'\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

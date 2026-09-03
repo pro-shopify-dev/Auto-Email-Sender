@@ -95,7 +95,7 @@ try {
     $i = 0
     foreach ($d in $dates) {
         $i++
-        $line = "Commit $i - $d"
+        $line = "Commit ${i} - ${d}"
         Add-Content -Path $stampFile -Value $line -Encoding UTF8
 
         # Set env vars for commit dates
@@ -105,7 +105,7 @@ try {
         # Use explicit author to make all commits attributed to the provided author
         # Use -c to override config for the single commit command
         & git add "$stampFile" | Out-Null
-        $message = "Synthetic commit $i: $d"
+        $message = "Synthetic commit ${i}: ${d}"
         & git -c user.name="$AuthorName" -c user.email="$AuthorEmail" commit -m $message | Out-Null
 
         # Capture the new commit sha and append to mapping
